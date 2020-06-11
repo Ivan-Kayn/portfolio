@@ -1,12 +1,13 @@
 //main: ..//style.less
 
-.intro {}
 
 .intro__inner {
     display: flex;
     border-bottom: 1px solid fade(@gray, 30%);
     padding-bottom: 120px;
     padding-top: 100px;
+    background: url("../../images/symbols.png") right bottom no-repeat;
+    position: relative;
 }
 
 .intro__content {
@@ -33,5 +34,8 @@
 }
 
 .intro__photo {
-    width: 50%;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 1;
 }
