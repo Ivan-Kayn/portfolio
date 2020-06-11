@@ -3,13 +3,13 @@
 .btn {
     display: inline-block;
     vertical-align: top;
-    padding: 1.1rem 1.8rem;
+    padding: 1.05em 1.7em;
     min-width: 170px;
     text-align: center;
 
     border: 1px solid @gray;
     background: none;
-    border-radius: 30px;
+    border-radius: 1.8em;
 
     font-family: inherit;
     font-size: 1.06rem;
@@ -33,6 +33,14 @@
 
     +.btn {
         margin-left: 1rem;
+    }
+
+    /* modificators */
+
+    &--sm {
+        font-size: 0.94rem;
+        font-weight: 700;
+        border-width: 2px;
     }
 
 }
