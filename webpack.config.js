@@ -8,6 +8,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin') //plugin for min
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 
+const plugind = () => {
+
+}
 
 module.exports = {
 
@@ -21,7 +24,6 @@ module.exports = {
     // entry points
     entry: {
         main: './js/script.js',
-        analytics: './js/analytics.js'
     },
 
     //output points 
@@ -34,7 +36,8 @@ module.exports = {
     optimization: {
         splitChunks: {
             chunks: 'all'
-        }
+        },
+        minimizer: [new TerserWebpackPlugin({}), new OptimizeCssAssetWebpackPlugin({})]
     },
 
     //plugins
@@ -46,8 +49,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns: [{
-                from: path.resolve(__dirname, 'src/fonts'),
-                to: path.resolve(__dirname, 'dist/fonts')
+                from: path.resolve(__dirname, 'src/images'),
+                to: path.resolve(__dirname, 'dist/images')
             }],
 
         }),
@@ -86,7 +89,7 @@ module.exports = {
                     'css-loader',
                     'less-loader'
                 ] //using miniCss to create new css file
-            },
+            }
         ]
     }
 

@@ -1,13 +1,14 @@
-import sayHello from './modules/popup.js'
-import '../less/style.less'
-import '.babel'
-// mobile nav
-sayHello()
-let navToggle = document.querySelector('#navToggle'),
-    nav = document.querySelector('#nav')
+import '../less/style.less' //importing styles for webpack 
+import modal from './modules/modals'
+import burger from './modules/burger'
+import modals from './modules/modals'
 
-navToggle.addEventListener('click', (e) => {
-    event.preventDefault()
+window.addEventListener('DOMContentLoaded', () => {
+    // mobile nav
+    burger()
 
-    nav.classList.add('show')
+    //modals
+    modals()
+
+
 })
