@@ -77,7 +77,8 @@ const modals = () => {
     //resume modals
     bindModal('.see__resume-btn', '#modal_resume', '#close_modal_2')
 
-
+    //work projects modals
+    bindModal('.work__image', '#modal_project_1', '#close_modal_1')
 
 
 }

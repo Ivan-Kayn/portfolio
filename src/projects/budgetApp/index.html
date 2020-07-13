@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+    <div class="logo">
+        <span>Money</span>
+        Keeper
+    </div>
+    <div class="title">
+       Conta budget giornaliero
+    </div>
+    <div class="main">
+        <div class="data">
+            <div class="choose-expenses">Inserisci le spese obligatorie</div>
+            <input class="expenses-item" type="text" id="expenses_1" placeholder="nome">
+			<input class="expenses-item" type="text" id="expenses_2" placeholder="prezzo">
+			<input class="expenses-item" type="text" id="expenses_3" placeholder="nome">
+			<input class="expenses-item" type="text" id="expenses_4" placeholder="prezzo">
+            <button class="expenses-item-btn">Approva</button>
+            
+            <div class="optionalexpenses">Inserisci le spese opzionali</div>
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_1">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_2">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_3">
+            <button class="optionalexpenses-btn">Approva</button>
+            
+            <div class="count-budget">Calcolo del budget giornaliero</div>
+            <button class="count-budget-btn">Calcola</button>
+            
+            <div class="choose-income-label">Inserisci voci di reddito, separate da virgola</div>
+            <input class="choose-income" type="text" id="income">
+            
+            <div class="checksavings">Ci sono accumuli: 
+                <input id="savings" type="checkbox" />
+            </div>
+            <label for="sum">somma</label>
+			<input class="choose-sum" id="sum" type="text">
+			<label for="percent">percentuale</label>
+            <input class="choose-percent" id="percent" type="text">
+            
+            <div class="open">
+                <button class="start" id="start">Inizia il calcolo</button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="result-table">
+                <div class="budget">Reddito annuale: </div>
+                <div class="budget-value"></div>
+    
+                <div class="daybudget">budget giornaliero: </div>
+                <div class="daybudget-value"></div>
+    
+                <div class="level">livello di reddito: </div>
+                <div class="level-value"></div>
+    
+                <div class="expenses">Spese obbligatorie: </div>
+                <div class="expenses-value"></div>
+    
+                <div class="optionalexpenses">Spese possibile: </div>
+                <div class="optionalexpenses-value"></div>
+    
+                <div class="income">Reddito aggiuntivo: </div>
+                <div class="income-value"></div>
+    
+                <div class="monthsavings">Risparmio per 1 mese:</div>
+                <div class="monthsavings-value"></div>
+    
+                <div class="yearsavings">Risparmio per 1 anno:</div>
+                <div class="yearsavings-value"></div>
+            </div>
+            <div class="time-data">
+                <div class="year">
+                    Anno:
+                    <input class="year-value" type="text" readonly>
+                </div>
+                <div class="month">
+                    Mese:
+                    <input class="month-value" type="text" readonly>
+                </div>
+                <div class="day">
+                    Giorno:
+                    <input class="day-value" type="text" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
