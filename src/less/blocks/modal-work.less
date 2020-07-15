@@ -17,16 +17,37 @@
     z-index: 1;
 
     transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+
 }
 
 .modal-work__content {
     width: 35%;
     padding: 3.4rem 6.6rem 1rem 1.73rem;
     position: relative;
+
+    @media @notebook {
+        padding: 0rem .6rem 2rem 1.73rem;
+
+    }
+
+    @media @mobile-sm {
+        padding: 0rem .2rem .3rem .3rem;
+
+    }
 }
 
 .modal-work__header {
     margin-bottom: 2.2rem;
+
+    @media @mobile {
+        margin-bottom: 1rem;
+    }
+
+    @media @mobile-sm {
+        margin-bottom: .5rem;
+
+    }
 }
 
 .modal-work__title {
@@ -35,6 +56,21 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: .2rem;
+
+
+    @media @tablet {
+        font-size: 1.5rem;
+    }
+
+    @media @mobile {
+        font-size: 1rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .7rem;
+
+    }
+
 }
 
 .modal-work__info {
@@ -44,11 +80,33 @@
 
     span {
         margin: 0 1rem;
+
+        @media @mobile-sm {
+            margin: 0 .2rem;
+
+        }
+    }
+
+    @media @mobile {
+        font-size: .6rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .4rem;
+
     }
 }
 
 .modal-work__client {
     margin-bottom: 2.2rem;
+
+    @media @notebook {
+        margin-bottom: .8rem;
+    }
+
+    @media @mobile {
+        margin-bottom: .4rem;
+    }
 }
 
 .modal-work__client-title {
@@ -57,12 +115,30 @@
     color: @black;
     font-weight: 700;
 
+    @media @mobile {
+        font-size: .7rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .5rem;
+
+    }
+
 }
 
 .modal-work__client-company {
     font-size: 0.94rem;
     font-style: italic;
     color: @gray;
+
+    @media @mobile {
+        font-size: .6rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .4rem;
+
+    }
 }
 
 .modal-work__text {
@@ -71,6 +147,27 @@
     color: @gray;
     line-height: 2;
     font-weight: 300;
+
+    @media @notebook {
+        margin-bottom: 6rem;
+    }
+
+    @media @tablet {
+        margin-bottom: 2.5rem;
+        line-height: 1.5;
+    }
+
+    @media @mobile {
+        font-size: .5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .4rem;
+
+        p {
+            margin-bottom: .3rem;
+        }
+    }
 }
 
 .modal-work__footer {
@@ -97,4 +194,25 @@
     text-transform: uppercase;
     font-family: inherit;
     cursor: pointer;
+
+    @media @mobile {
+        font-size: .7rem;
+
+    }
+
+    @media @mobile-sm {
+        font-size: .4rem;
+
+        img {
+            height: 6px;
+
+        }
+
+        span {
+            @media @mobile-sm {
+                display: none;
+            }
+        }
+
+    }
 }

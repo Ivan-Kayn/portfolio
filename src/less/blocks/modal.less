@@ -27,6 +27,23 @@
         max-width: 900px;
     }
 
+    @media @notebook {
+        max-width: 900px;
+        max-height: 600px;
+    }
+
+    @media @tablet {
+        max-width: 700px;
+    }
+
+    @media @mobile {
+        max-width: 500px;
+
+    }
+
+    @media @mobile-sm {
+        max-width: 310px;
+    }
 }
 
 .modal__close {
@@ -51,6 +68,37 @@
     img {
         width: 34px;
         height: 34px;
+
+        @media @notebook {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media @tablet {
+            width: 25px;
+            height: 25px;
+        }
+
+        @media @mobile {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media @mobile-sm {
+            width: 10px;
+            height: 10px;
+        }
+
+    }
+
+    @media @notebook {
+        top: .5rem;
+        right: .5rem;
+    }
+
+    @media @mobile-sm {
+        top: 0.2rem;
+        right: 0.2rem;
     }
 
 }

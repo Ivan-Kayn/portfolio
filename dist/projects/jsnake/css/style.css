@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 19%, rgba(0, 212, 255, 1) 100%);
+}
+
+.field {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(43, 9, 48);
+    background: linear-gradient(90deg, rgba(43, 9, 48, 1) 0%, rgba(226, 74, 136, 1) 75%, rgba(175, 30, 247, 1) 100%);
+}
+
+.excel {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.snakeBody {
+    background-color: lightgreen;
+    background-size: cover;
+
+}
+
+.head {
+    background-color: ivory;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.mouse {
+    background-color: indigo;
+    background-size: cover;
+
+}
+
+.input {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 40px;
+    display: block;
+    background: rgb(57, 29, 29);
+    background: linear-gradient(90deg, rgba(57, 29, 29, 1) 0%, rgba(147, 6, 45, 1) 55%, rgba(255, 0, 0, 1) 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 90px;
+    text-align: center;
+    color: #fff;
+}
