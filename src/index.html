@@ -24,10 +24,8 @@
                     </div>
                 </div>
                 <nav class="nav" id="nav">
-                    <a class="nav__link " href="">work </a>
-                    <a class="nav__link" href="">about me </a>
-                    <a class="nav__link" href="">blog </a>
-                    <a href="" class="nav__link">contact </a>
+                    <a class="nav__link " href="#works">works </a>
+                    <a class="nav__link" href="#about-me">about me </a>
                     <a class="nav__link nav__link--btn hireme__btn" href="">hire me </a>
                 </nav>
                 <button type="button" class="burger" id="navToggle">
@@ -46,10 +44,13 @@
                     <h1 class="intro__title">Ivan Kayn </h1>
                     <div class="intro__text">Frontend Developer </div>
                     <div class="social">
-                        <a href="" class="social__link"><img class="social__img" src="./images/vk.svg" alt=""></a><a
-                            href="" class="social__link"><img class="social__img" src="./images/linkedin.svg"
-                                alt=""></a><a href="" class="social__link"><img class="social__img"
-                                src="./images/github.svg" alt=""></a><a href="" class="social__link"><img
+                        <a href="https://vk.com/id239501490" target="_blank" class="social__link"><img
+                                class="social__img" src="./images/vk.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/ivan-kayn-528b84191/" target="_blank"
+                            class="social__link"><img class="social__img" src="./images/linkedin.svg" alt=""></a>
+                        <a href="https://github.com/Ivan-Kayn" target="_blank" class="social__link"><img
+                                class="social__img" src="./images/github.svg" alt=""></a>
+                        <a href="https://www.instagram.com/ivan_kayn/" target="_blank" class="social__link"><img
                                 class="social__img" src="./images/instagram.svg" alt=""></a></div>
                     <a class="btn hireme__btn" href="">Hire me </a>
 
@@ -59,92 +60,96 @@
         </div>
     </section>
     <!-- Works -->
-    <div class="works">
-        <div class="container">
-            <div class="works__nav">
-                <a href="#" class="works__nav-link" data-filter="all">All </a>
-                <a href="#" class="works__nav-link" data-filter="app">App </a>
-                <a href="#" class="works__nav-link" data-filter="website">Website </a>
-                <a href="#" class="works__nav-link" data-filter="Game">Game </a>
+    <section id="works">
+        <div class="works">
+            <div class="container">
+                <div class="works__nav">
+                    <a href="#" class="works__nav-link">All </a>
+                    <a href="#" class="works__nav-link">App </a>
+                    <a href="#" class="works__nav-link">Website </a>
+                    <a href="#" class="works__nav-link">Game </a>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio__col all website">
+                        <div class="work"><img class="work__image work__image-1" src="./images/works/yoga_landing.png"
+                                alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: website </div>
+                                <div class="work__title">Yoga Landing <time datetime="2020-06-11 16:00"
+                                        class="work__date">2019 </time></div>
+                            </div>
+                            <div class="work__try"><a target="_blank" href="./projects/yoga-landing/index.html">try
+                                    it...</a></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__col all website">
+                        <div class="work"><img class="work__image work__image-2" src="./images/works/budget_app.png"
+                                alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: website </div>
+                                <div class="work__title">Budget web app <time datetime="2020-06-11 16:00"
+                                        class="work__date">2019 </time></div>
+                            </div>
+                            <div class="work__try"><a target="_blank" href="./projects/budgetApp/index.html">try
+                                    it...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__col all website">
+                        <div class="work"><img class="work__image work__image-3" src="./images/works/irvas_landing.png"
+                                alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: website </div>
+                                <div class="work__title"> Irvas Landing <time datetime="2020-06-11 16:00"
+                                        class="work__date">2020 </time></div>
+                            </div>
+                            <div class="work__try"><a target="_blank" href="./projects/irvas_landing/index.html">try
+                                    it...</a></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__col all game">
+                        <div class="work"><img class="work__image work__image-4" src="./images/works/snake.png" alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category:game </div>
+                                <div class="work__title">Snake game <time datetime="2020-06-11 16:00"
+                                        class="work__date">2020</time></div>
+                            </div>
+                            <div class="work__try"><a target="_blank" href="./projects/jsnake/index.html">try it...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__col all app">
+                        <div class="work"><img class="work__image work__image-5" src="./images/works/calculator .png"
+                                alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: app </div>
+                                <div class="work__title">Online calculator <time datetime="2020-06-11 16:00"
+                                        class="work__date">2020</time></div>
+                            </div>
+                            <div class="work__try"><a target="_blank" href="./projects/online_calculator/index.html">try
+                                    it...</a></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__col all " data-cat="app">
+                        <div class="work"><img class="work__image work__image-6" src="https://placehold.it/3360x1942"
+                                alt="">
+                            <div class="work__content">
+                                <div class="work__cat">category: app </div>
+                                <div class="work__title">Project title <time datetime="2020-06-11 16:00"
+                                        class="work__date">2020 </time></div>
+                            </div>
+                            <div class="work__try"><a href="">try it...</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio end -->
+                <div class="text-center"><a class="btn btn--sm" href="">load more work</a></div>
             </div>
-            <div class="portfolio">
-                <div class="portfolio__col" data-cat="app">
-                    <div class="work"><img class="work__image work__image-1" src="./images/works/yoga_landing.png"
-                            alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category: website </div>
-                            <div class="work__title">Yoga Landing <time datetime="2020-06-11 16:00"
-                                    class="work__date">2019 </time></div>
-                        </div>
-                        <div class="work__try"><a target="_blank" href="./projects/yoga-landing/index.html">try
-                                it...</a></div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-cat="website">
-                    <div class="work"><img class="work__image work__image-2" src="./images/works/budget_app.png" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category: website </div>
-                            <div class="work__title">Budget web app <time datetime="2020-06-11 16:00"
-                                    class="work__date">2019 </time></div>
-                        </div>
-                        <div class="work__try"><a target="_blank" href="./projects/budgetApp/index.html">try it...</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-cat="interaction">
-                    <div class="work"><img class="work__image work__image-3" src="./images/works/irvas_landing.png"
-                            alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category: website </div>
-                            <div class="work__title"> Irvas Landing <time datetime="2020-06-11 16:00"
-                                    class="work__date">2020 </time></div>
-                        </div>
-                        <div class="work__try"><a target="_blank" href="./projects/irvas_landing/index.html">try
-                                it...</a></div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-cat="website">
-                    <div class="work"><img class="work__image work__image-4" src="./images/works/snake.png" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category:game </div>
-                            <div class="work__title">Snake game <time datetime="2020-06-11 16:00"
-                                    class="work__date">2020</time></div>
-                        </div>
-                        <div class="work__try"><a target="_blank" href="./projects/jsnake/index.html">try it...</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-cat="interaction">
-                    <div class="work"><img class="work__image work__image-5" src="./images/works/calculator .png"
-                            alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category: app </div>
-                            <div class="work__title">Online calculator <time datetime="2020-06-11 16:00"
-                                    class="work__date">2020</time></div>
-                        </div>
-                        <div class="work__try"><a target="_blank" href="./projects/online_calculator/index.html">try
-                                it...</a></div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-cat="app">
-                    <div class="work"><img class="work__image work__image-6" src="https://placehold.it/3360x1942"
-                            alt="">
-                        <div class="work__content">
-                            <div class="work__cat">category: app </div>
-                            <div class="work__title">Project title <time datetime="2020-06-11 16:00"
-                                    class="work__date">2020 </time></div>
-                        </div>
-                        <div class="work__try"><a href="">try it...</a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio end -->
-            <div class="text-center"><a class="btn btn--sm" href="">load more work</a></div>
         </div>
-    </div>
+    </section>
     <!-- works end -->
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about-me">
         <div class="container">
             <div class="about__inner">
                 <div class="about__photo">
@@ -187,7 +192,7 @@
 
         </div>
     </div> <!-- reviews end -->
-    <!-- News -->
+    <!-- Skills -->
     <section class="skills">
         <div class="container">
             <div class="skills__block">
@@ -299,16 +304,16 @@
                     </div>
 
                     <div class="footer__social">
-                        <a href="" target="blank">
+                        <a href="https://www.instagram.com/ivan_kayn/" target="_blank">
                             <img class="footer__social-icon" src="./images/instagram-footer.svg" alt="">
                         </a>
-                        <a href="" target="blank">
+                        <a href="https://www.linkedin.com/in/ivan-kayn-528b84191/" target="_blank">
                             <img class="footer__social-icon" src="./images/linkedin-footer.svg" alt="">
                         </a>
-                        <a href="" target="blank">
+                        <a href="https://github.com/Ivan-Kayn" target="_blank">
                             <img class="footer__social-icon" src="./images/github-footer.svg" alt="">
                         </a>
-                        <a href="" target="blank">
+                        <a href="https://vk.com/id239501490" target="_blank">
                             <img class="footer__social-icon" src="./images/vk-footer.svg" alt="">
                         </a>
                     </div>
@@ -316,10 +321,8 @@
                 </div>
 
                 <div class="footer__nav">
-                    <a href="" class="footer__nav-link">Work</a>
-                    <a href="" class="footer__nav-link">About me</a>
-                    <a href="" class="footer__nav-link">Blog</a>
-                    <a href="" class="footer__nav-link">Contact</a>
+                    <a href="#works" class="footer__nav-link">Work</a>
+                    <a href="#about-me" class="footer__nav-link">About me</a>
                     <a href="" class="footer__nav-link footer__nav-link--btn hireme__btn">hire me</a>
                 </div>
 
@@ -612,7 +615,7 @@
     </div>
 
 
-    <!-- Modal 3 -->
+    <!-- Modal 2 -->
     <div class="modal" id="modal_hire_me">
         <div class="modal__dialog modal__dialog--sm">
 
@@ -631,11 +634,11 @@
                     <ul class="contact__info">
                         <li class="contact__info-item">
                             <img class="contact__info-icon" src="./images/phone.svg" alt="">
-                            (200) 100 4000
+                            +39 389 002 2437
                         </li>
                         <li class="contact__info-item">
                             <img class="contact__info-icon" src="./images/mail.svg" alt="">
-                            kayn@gmail.com
+                            ionel.cainareanu1@gmail.com
                         </li>
                     </ul>
 
@@ -644,7 +647,7 @@
                             <label class="form__label" for="input-email">
                                 Email
                             </label>
-                            <input class="form__input" type="text" name="input-email" placeholder="Adress e-mail"
+                            <input class="form__input" type="text" name="input-email" placeholder="E-mail adress"
                                 id="input-email">
                         </div>
 
@@ -662,13 +665,10 @@
                             </button>
                         </div>
                     </form>
-
-
-
-
+                </div>
+                <div class="contact__right">
 
                 </div>
-
 
 
             </div>
@@ -677,7 +677,7 @@
 
 
         </div> <!-- modal__dialog end -->
-    </div> <!--  modal 3 end -->
+    </div> <!--  modal 2 end -->
 
 
 
