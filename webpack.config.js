@@ -23,7 +23,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'), //setting the default dir, using path object
     // entry points
     entry: {
-        main: './js/script.js'
+        main: './js/script.js',
+        particles: './js/particles/particles.js'
     },
 
     //output points 
