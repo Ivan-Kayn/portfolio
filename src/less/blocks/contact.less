@@ -2,18 +2,51 @@
 
 .contact {
     display: flex;
+    overflow: hidden;
 
+    @media @notebook {
+        height: 600px;
+    }
 
+    @media @tablet {
+        height: 552px;
+    }
+
+    @media @mobile {
+        height: 394px;
+    }
+
+    @media @mobile-sm {
+        width: 300px;
+        height: 410px;
+    }
 }
 
 .contact__left {
     width: 47%;
     padding: 2rem;
+
+    @media @mobile {
+        padding: 15px;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
 }
 
 .contact__right {
     width: 53%;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media @mobile-sm {
+        display: none;
+        width: 0;
+    }
 }
 
 .contact__info {
@@ -25,16 +58,27 @@
     color: @black;
     font-weight: 300;
 
+    @media @mobile {
+        margin: 1rem 0;
+    }
 }
 
 .contact__info-item {
     display: flex;
     align-items: center;
     margin-bottom: .75rem;
+    font-size: 1rem;
 
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media @mobile {
+        font-size: .7rem;
+    }
+
+
+
 }
 
 .contact__info-icon {

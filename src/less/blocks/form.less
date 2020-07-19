@@ -2,6 +2,10 @@
 
 .form__group {
     margin-bottom: 1.8rem;
+
+    @media @notebook {
+        margin-bottom: 1rem;
+    }
 }
 
 .form__label {
@@ -10,6 +14,10 @@
     color: @black;
     display: inline-block;
     margin-bottom: 0.6rem;
+
+    @media @tablet {
+        font-size: .6rem;
+    }
 }
 
 .form__input,
@@ -40,7 +48,33 @@
 
 }
 
+.form__input {
+    @media @mobile {
+        height: 30px;
+    }
+}
+
 .form__textarea {
     height: 200px;
     resize: none;
+
+    @media @notebook {
+        height: 150px;
+    }
+
+    @media @tablet {
+        height: 120px;
+    }
+
+    @media @tablet {
+        height: 80px;
+    }
+}
+
+.form__btn {
+    @media @mobile {
+        padding: 7px;
+
+        font-size: .8rem;
+    }
 }
