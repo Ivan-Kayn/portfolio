@@ -3,8 +3,8 @@ import burger from './modules/burger'
 import modals from './modules/modals'
 import filter from './modules/filter'
 
-
 window.addEventListener('DOMContentLoaded', () => {
+
 
     // mobile nav
     burger()

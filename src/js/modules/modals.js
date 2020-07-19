@@ -8,18 +8,15 @@ const modals = () => {
         const trigger = document.querySelectorAll(triggerSelector),
             modal = document.querySelector(modalSelector),
             close = document.querySelector(closeSelector),
-            windows = document.querySelectorAll('[data-modal]'),
             scroll = calcScroll()
 
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
+
                 if (e.target) {
                     e.preventDefault()
 
                 }
-                windows.forEach(item => {
-                    item.style.display = 'none'
-                })
 
                 modal.style.display = "flex"
                 document.body.style.marginRight = `${scroll}px`
@@ -30,9 +27,6 @@ const modals = () => {
 
 
         close.addEventListener('click', () => {
-            windows.forEach(item => {
-                item.style.display = 'none'
-            })
             modal.style.display = "none"
             document.body.style.marginRight = `0px`
             document.body.style.overflow = "visible"
@@ -40,9 +34,6 @@ const modals = () => {
 
         modal.addEventListener('click', (e) => {
             if (e.target === modal && closeClickOverlay) {
-                windows.forEach(item => {
-                    item.style.display = 'none'
-                })
                 modal.style.display = "none"
                 document.body.style.marginRight = `0px`
                 document.body.style.overflow = "visible"
@@ -84,6 +75,8 @@ const modals = () => {
     bindModal('.work__image-4', '#modal_project_4', '#close_project_4')
     bindModal('.work__image-4', '#modal_project_4', '#close_project_4')
     bindModal('.work__image-5', '#modal_project_5', '#close_project_5')
+    bindModal('.work__image-6', '#modal_project_6', '#close_project_6')
+
 }
 
 export default modals
