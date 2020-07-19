@@ -8,9 +8,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin') //plugin for min
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 
-const plugind = () => {
 
-}
 
 module.exports = {
 
@@ -30,7 +28,7 @@ module.exports = {
     //output points 
     output: {
         filename: '[name].[hash].js', //final file name with name and contenthash pattern
-        path: path.resolve(__dirname, 'dist') //dir to save build file
+        path: path.resolve(__dirname, 'dist/') //dir to save build file
     },
 
     //chunks optimization 
@@ -40,6 +38,7 @@ module.exports = {
         },
         minimizer: [new TerserWebpackPlugin({}), new OptimizeCssAssetWebpackPlugin({})]
     },
+   
 
     //plugins
     plugins: [
@@ -77,8 +76,34 @@ module.exports = {
                 ] //using miniCss to create new css file
             },
             {
-                test: /\.(png|svg)/,
-                use: ['file-loader']
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: [0.65, 0.90],
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+                        }
+                    },
+                ],
             },
             {
                 test: /\.ttf/,
@@ -95,7 +120,9 @@ module.exports = {
                     'css-loader',
                     'less-loader'
                 ] //using miniCss to create new css file
-            }
+            },
+
+
         ]
     }
 
